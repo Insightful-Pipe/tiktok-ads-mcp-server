@@ -72,7 +72,7 @@ When Cursor shows **Needs authentication**, click **Connect** and sign in to Ins
 
 ## Available Actions
 
-124 actions: 15 read, 109 write.
+89 actions: 15 read, 74 write.
 
 ### Read Actions (15)
 
@@ -80,7 +80,7 @@ When Cursor shows **Needs authentication**, click **Connect** and sign in to Ins
 |--------|-------------|
 | `adgroups_metadata` | Returns ad group configuration including targeting, bidding, and schedule settings |
 | `ads_metadata` | Returns full ad entity metadata for the specified advertiser |
-| `advertisers_metadata` | Returns Business Center advertiser account details (accepts advertiser_id or advertiser_ids list) |
+| `advertisers_metadata` | Returns the connected advertiser's account details |
 | `campaign_gmv_max_info` | Returns the full configuration of one GMV Max campaign, including its store_id |
 | `campaign_gmv_max_session_get` | Returns the details of up to 20 max delivery or creative boost sessions |
 | `campaign_gmv_max_session_list` | Lists the max delivery and creative boost sessions inside a Product GMV Max campaign |
@@ -94,10 +94,10 @@ When Cursor shows **Needs authentication**, click **Connect** and sign in to Ins
 | `tool_targeting_info` | Get detailed targeting info (location names, ISP info, etc.) |
 | `tool_targeting_search` | Search for targeting options by keyword (geo locations, zip codes, etc.) |
 
-### Write Actions (109)
+### Write Actions (74)
 
 <details>
-<summary>Show all 109 write actions</summary>
+<summary>Show all 74 write actions</summary>
 
 | Action | Description |
 |--------|-------------|
@@ -112,25 +112,6 @@ When Cursor shows **Needs authentication**, click **Connect** and sign in to Ins
 | `advertiser_update` | Update advertiser account settings (company name, address, etc.) |
 | `app_create` | Register a mobile app for ad tracking and optimization |
 | `app_update` | Update a registered mobile app's settings |
-| `bc_advertiser_create` | Create a new advertiser under a Business Center |
-| `bc_asset_admin_delete` | Remove admin permissions for an asset |
-| `bc_asset_assign` | Assign assets (ad accounts, pixels, etc.) to BC members or partners |
-| `bc_asset_group_create` | Create an asset group in the Business Center |
-| `bc_asset_group_delete` | Delete an asset group |
-| `bc_asset_group_update` | Update an asset group |
-| `bc_asset_unassign` | Unassign assets from BC members or partners |
-| `bc_billing_group_create` | Create a billing group in the Business Center |
-| `bc_billing_group_update` | Update a billing group |
-| `bc_image_upload` | Upload an image to the Business Center asset library |
-| `bc_member_delete` | Remove a member from the Business Center |
-| `bc_member_invite` | Invite a member to the Business Center |
-| `bc_member_update` | Update a Business Center member's role |
-| `bc_partner_add` | Add a partner Business Center |
-| `bc_partner_asset_delete` | Remove asset sharing with a partner |
-| `bc_partner_delete` | Remove a partner Business Center |
-| `bc_pixel_link_update` | Update pixel link settings in the Business Center |
-| `bc_pixel_transfer` | Transfer pixel ownership between advertisers |
-| `bc_transfer` | Transfer funds between Business Center and advertiser accounts |
 | `blockedword_create` | Create blocked words for comment filtering |
 | `blockedword_delete` | Delete blocked words |
 | `blockedword_task_create` | Create a bulk blocked word management task |
@@ -143,20 +124,6 @@ When Cursor shows **Needs authentication**, click **Connect** and sign in to Ins
 | `campaign_gmv_max_update` | Update a GMV Max campaign |
 | `campaign_status_update` | Enable, disable, or delete campaigns in batch |
 | `campaign_update` | Update an existing campaign's settings (name, budget, etc.) |
-| `catalog_capitalize` | Capitalize catalog product titles |
-| `catalog_create` | Create a product catalog |
-| `catalog_delete` | Delete a product catalog |
-| `catalog_eventsource_bind` | Bind an event source (pixel/app) to a catalog |
-| `catalog_eventsource_unbind` | Unbind an event source from a catalog |
-| `catalog_feed_create` | Create a product feed for a catalog |
-| `catalog_feed_delete` | Delete a product feed |
-| `catalog_feed_update` | Update a product feed |
-| `catalog_product_delete` | Delete products from a catalog |
-| `catalog_product_file` | Upload a product file to a catalog |
-| `catalog_set_delete` | Delete a product set from a catalog |
-| `catalog_set_update` | Update a product set in a catalog |
-| `catalog_update` | Update a product catalog's settings |
-| `catalog_video_delete` | Delete a video from a catalog |
 | `comment_delete` | Delete comments on ads |
 | `comment_post` | Post a reply to a comment on an ad |
 | `comment_status_update` | Hide or unhide comments on ads |
@@ -186,12 +153,10 @@ When Cursor shows **Needs authentication**, click **Connect** and sign in to Ins
 | `optimizer_rule_create` | Create an automated optimization rule |
 | `optimizer_rule_update` | Update an automated optimization rule |
 | `pangle_block_list_update` | Update the Pangle block list for the advertiser |
-| `pixel_batch` | Send pixel events in batch (server-to-server conversion tracking) |
 | `pixel_create` | Create a TikTok pixel for conversion tracking |
 | `pixel_event_create` | Create a pixel event for tracking specific conversions |
 | `pixel_event_delete` | Delete pixel events |
 | `pixel_event_update` | Update a pixel event |
-| `pixel_track` | Send a single pixel event (server-to-server conversion tracking) |
 | `pixel_update` | Update a TikTok pixel's settings |
 | `playable_delete` | Delete a playable ad creative |
 | `playable_save` | Save a playable ad creative after upload |
